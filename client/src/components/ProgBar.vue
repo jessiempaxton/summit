@@ -1,6 +1,6 @@
 <template>
   <div class="p-bar">
-    <h1>Progress Bar</h1>
+    <!-- <h1>Progress Bar</h1> -->
     <div class="progress vertical" id="pbar">
       <div class="progress-bar" role="progressbar" :style="{height: userProgress+'%'}"></div>
       <span class="climber" data-toggle="tooltip" data-placement="left" :title="userProgress+'%'"></span>
@@ -21,7 +21,7 @@
       //where floating tooltip comes from tooltip.show
     },
     beforeDestroy() {
-      $('[data-toggle="tooltip"]').tooltip('dispose');
+      $('[role="tooltip"]').tooltip('dispose');
     },
     data() {
       return {
@@ -78,4 +78,7 @@
   .climber+.tooltip>.tooltip-arrow {
     styling for arrow here
   } */
+  .p-bar {
+    width: 5vw
+  }
 </style>
