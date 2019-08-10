@@ -2,12 +2,12 @@
   <div class="teamCard ">
     <div class="card team-card">
       <div class="card-body">
-        <h5 class="card-title">{{team.name}} - {{team.active}} </h5>
+        <h5 class="card-title">{{team.name}} - {{team.active = true ? 'Active Team' : 'Inactive Team'}} </h5>
         <h6 class="card-subtitle mb-2 text-muted">Members</h6>
         <p class="card-text" v-for="user in team.users">{{user.name}} - {{user.points}}</p>
         <input type="text" class="card-link" v-model="email" placeholder="Member Email">
-        <button @click="addUser()">Add Member</button>
-        <button class="btn btn-danger" @click="leaveTeam()">Leave Team</button>
+        <button class="btn btn-info" @click="addUser()">Add Member</button>
+        <button class="btn btn-info" @click="leaveTeam()">Leave Team</button>
         <button @click="changeActiveTeam()" class="btn btn-info">Make Active Team</button>
       </div>
     </div>

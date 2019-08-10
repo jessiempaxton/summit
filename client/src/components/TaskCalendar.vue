@@ -3,7 +3,7 @@
     <div class="row calendar-view">
       <DayTasks v-for="day in days" :day="day" />
     </div>
-    <div>
+    <!-- <div>
       <h3 @click="sunStart = !sunStart">calendar</h3>
 
       <div class="calendar-view" :class="{'sun-start': sunStart}">
@@ -16,7 +16,7 @@
         <div class="day sat">sat</div>
       </div>
 
-    </div>
+    </div> -->
   </div>
 </template>
 

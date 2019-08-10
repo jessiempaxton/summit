@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
       Create a Team
     </button>
 
