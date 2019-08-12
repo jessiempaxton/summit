@@ -15,6 +15,7 @@
       <button type="submit" class="btn btn-info">Register</button>
     </form>
     <div class="action" @click="loginForm = !loginForm">
+      <p>Just want to log in and check it out? Use email: jessie@fake.com | password: password</p>
       <p v-if="loginForm">Click here to Register</p>
       <p v-else>Go back to Login</p>
     </div>

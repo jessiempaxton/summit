@@ -61,7 +61,7 @@ export default new Vuex.Store({
   actions: {
     //#region -- AUTH STUFF --
     register({ commit, dispatch }, newUser) {
-      debugger
+      // debugger
       auth.post('register', newUser)
         .then(res => {
           commit('setUser', res.data)
@@ -219,7 +219,7 @@ export default new Vuex.Store({
 
     async editUserTaskById({ commit, dispatch }, task) {
       try {
-        debugger
+        // debugger
         let res = await api.put('/usertasks/' + task._id, task)
         console.log('edited Usertask', res.data)
         this.dispatch('getUserTasksByUserId', task.userId._id)
@@ -228,7 +228,7 @@ export default new Vuex.Store({
 
     async deleteUserTask({ dispatch, commit }, task) {
       try {
-        debugger
+        // debugger
         let res = await api.delete('/usertasks/' + task._id)
         console.log(res.data)
         this.dispatch('getUserTasksByUserId', task.userId._id)
