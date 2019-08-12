@@ -5,7 +5,7 @@ import store from './store'
 import axios from 'axios'
 import './registerServiceWorker'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
 class AuthService {
   async Authenticate() {
