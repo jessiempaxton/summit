@@ -6,7 +6,6 @@ import axios from 'axios'
 import './registerServiceWorker'
 
 // Vue.config.productionTip = false
-
 class AuthService {
   async Authenticate() {
     //debugger
