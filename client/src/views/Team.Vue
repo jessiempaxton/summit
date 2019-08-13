@@ -11,7 +11,6 @@
   </div>
 </template>
 
-
 <script>
   import Teams from "@/components/Teams.vue"
   import CreateTeam from "@/components/CreateTeam.vue"
