@@ -3,20 +3,6 @@
     <div class="row calendar-view">
       <DayTasks v-for="day in days" :day="day" />
     </div>
-    <!-- <div>
-      <h3 @click="sunStart = !sunStart">calendar</h3>
-
-      <div class="calendar-view" :class="{'sun-start': sunStart}">
-        <div class="day sun">sun</div>
-        <div class="day mon">mon</div>
-        <div class="day tue">tues</div>
-        <div class="day wed">wed</div>
-        <div class="day thu">thu</div>
-        <div class="day fri">fri</div>
-        <div class="day sat">sat</div>
-      </div>
-
-    </div> -->
   </div>
 </template>
 
@@ -111,8 +97,8 @@
   .sat {
     grid-area: sat
   } */
-
+  /* 
   .sun {
     grid-area: sun
-  }
+  } */
 </style>

@@ -16,8 +16,6 @@
       $('[data-toggle="tooltip"]')
         .tooltip({ trigger: 'manual' })
         .tooltip('show')
-
-
       //where floating tooltip comes from tooltip.show
     },
     beforeDestroy() {

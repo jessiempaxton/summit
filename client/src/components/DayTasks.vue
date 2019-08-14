@@ -87,7 +87,7 @@
 <style>
   .isChecked {
     text-decoration: line-through;
-    color: goldenrod;
+    color: black;
   }
 
   .Health {

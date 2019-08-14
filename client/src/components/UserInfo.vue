@@ -18,7 +18,7 @@
       <div class="col-sm-4 col-md-4 d-flex align-items-center justify-content-center">
         <div class="card" style="width: auto; height: auto;">
           <div class="card-body">
-            <h6 class="card-title"><b>Tags</b></h6>
+            <h6 class="card-title"><b>Goals</b></h6>
             <hr>
             <span class="card-text" :class="tag" v-for="tag in tags"><b>{{ tag }}<br></b>
             </span>
