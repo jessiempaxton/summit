@@ -3,7 +3,7 @@
     <h3 style="padding-top: 10px; padding-bottom: 0px;">{{day}}</h3>
     <hr style="padding: 0px;">
     <div v-for="task in instances" class="d-flex justify-content-start task" :class="task.taskData.tags[0]">
-      <label class="checkbox " v-bind:class="{isChecked: task.completed}">
+      <label class="checkbox" v-bind:class="{isChecked: task.completed}">
         <input type="checkbox" v-model="task.completed" @click="toggleTaskStatus(task, $event)">
         {{task.taskData.title}}
         <button v-if="task.taskData.completed = 'true'" class="btn fas fa-trash-alt fa-xs pl-0"

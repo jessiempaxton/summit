@@ -95,17 +95,9 @@
     position: absolute;
   }
 
-  /* .background {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 92vh;
-    background-attachment: fixed;
-    position: absolute;
-  } */
-
   .isChecked {
     text-decoration: line-through;
-    color: goldenrod;
+    color: black;
   }
 
   .vertical {
